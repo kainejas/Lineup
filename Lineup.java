@@ -123,6 +123,12 @@ public class Lineup {
 
     private class Player {
 
+        String name;
+        String team;
+        double avgPPG;
+        String position;
+        int salary;
+
         public Player(String name, String position, int salary, double avgPPG, String team){
             this.name = name;
             this.position = position;
@@ -130,12 +136,6 @@ public class Lineup {
             this.avgPPG = avgPPG;
             this.team = team;
         }
-
-        String name;
-        String team;
-        double avgPPG;
-        String position;
-        int salary;
     }
 
 
@@ -153,7 +153,7 @@ public class Lineup {
 
     public void run() {
 
-        String csvFile = "";//TODO
+        String csvFile = "/home/jason/DKSalaries.csv";
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
